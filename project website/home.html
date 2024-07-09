@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>websitee | home</title>
+    <link rel="stylesheet" href="style/styling.css">
+    <link rel="stylesheet" href="https://fontawesome.com/">
+    <style>
+        body{
+            background-image: url("blurphoto.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+        body {
+        margin:0;
+    }
+    .slides {
+        display: none;
+        height: 650px;
+        overflow: hidden;
+    }
+
+    .container {
+        margin-top: 5%;
+        max-width: 1600px;
+        position: relative;
+        }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: black;
+    }
+
+    .caption {
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin-right: 2px;
+        background-color: green;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .active, .dot:hover {
+        background-color: blue;
+    }
+            .bilal{
+                border-bottom-style: groove;
+                border-width: 100%;
+                background-color: #333;
+            }
+            .t{
+                text-align: center;
+               color:rgb(255, 255, 255); 
+               font-size: 30px;
+               font-family: serif;
+            }
+            header {
+    border: hidden;
+    padding: 5px;
+    background-color: rgb(245, 173, 5);
+    height: 160px;
+}
+.hehe.no{
+    margin-top: -106px;
+    border: hidden;
+    margin-left: 50%;
+    margin-bottom: 150px;
+    padding-bottom: 90px;
+}
+.m{height:300px;}
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="xyz">
+                <img src="logo_1.jpg" alt="logo" width="200px" height="200px">
+            </div> 
+            <div class="abc">
+                <h3>  8185872735 / hyderabad india / project@vintage.in </h3> 
+            </div>
+        </div>
+        
+         </header>
+     
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="who we are.html">about us</a>
+    </nav>
+    <p>WHO WE ARE...</p>
+    <h2>We are vintage builders & developers are one of the most reputeted and well known organization, we're founded in the year 2018 as a specialization of trading goods, properties, and business consultant. We have grown to become one of the major companies in the business of Sale, Purchase, and Logistics of Various Raw Materials and properties in the Form of Import and Export in various countries - employing 1,000+ people around India. and we works for to get a growth oriented position in the market where our services can be utilized for improvement and success of the organization. and also to be a part of a charity. </h2>
+    
+<div class="container">
+
+    <div class="slides">
+      <img src="imagec.jpeg" style="width:100%">
+    </div>
+  
+    <div class="slides">
+      <img src="imagee.jpeg" style="width:100%">
+    </div>
+  
+    <div class="slides">
+      <img src="imagea.jpeg" style="width:100%">
+      </div>
+
+    <div class="slides">
+        <img src="imaged.jpeg" style="width:100%">
+         </div>
+  
+    <a class="prev" onclick="subSlides()">❮</a>
+    <a class="next" onclick="plusSlides()">❯</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="changeSlide(1)"></span> 
+    <span class="dot" onclick="changeSlide(2)"></span> 
+    <span class="dot" onclick="changeSlide(3)"></span> 
+    <span class="dot" onclick="changeSlide(4)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides() {
+   slideIndex++;
+      showSlides(slideIndex);
+  }
+  function subSlides() {
+   slideIndex--;
+      showSlides(slideIndex);
+  }
+  
+  function changeSlide(n) {
+   slideIndex=n;
+    showSlides(slideIndex);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+  
+    // slides[0],slides[1],slides[2],slides[3]
+   var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+    slideIndex = 1
+    }    
+    if (n < 1) {
+    slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+    <p class="apple">Contact us through our...</p>   
+    <p class="mango">Social Media</p> 
+<div class="umair">
+    <a href="https://m.facebook.com/people/Vintage-Builders-Developers/100069349004754/" target="_new"><img src="facebooklogo-removebg-preview.png" width="250px"></a>
+    <a href="https://www.instagram.com/vintage_builders/?hl=en" target="_new"><img src="imstagramlogo-removebg-preview.png" width="250px"></a>
+    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FVantageBldrs" target="_new"><img src="twitterlogo-removebg-preview.png" width="250px"></a>
+    <a href="https://www.youtube.com/@VintageBuilders" target="_new"><img src="utubee-removebg-preview.png" width="250px"></a>
+</div>
+
+
+
+    <div class="bilal">
+
+        <div class="haha">
+            <div class="pull">
+                <p class="t">QUICK LINK</p>
+                <a href="home.html" class="lol"> > Home</a><br><br>
+                <a href="services.html" class="lol"> > Services</a><br><br>
+                <a href="gallery.html" class="lol"> > Gallery</a><br><br>
+                <a href="contact.html" class="lol"> > Contact</a><br><br>
+                <a href="who we are.html" class="lol"> > About us</a><br><br>
+            </div>
+            <div class="push"> 
+                <p class="l"> GET IN TOUCH</p>
+                <p class="m">#8-923/10/C Gaffar Khan Colony, Banjara Hills Road No.3, Hyderabad, Telangana - India  <br><br>
+
+                    #Ward No - 07, Oxford School Road, Beside HDFC Bank Lane, Opp. Patel Complex, Barbil, Dist - Keonjhar, Odisha 758035 <br><br>
+                    
+                    (+91) 81436-53452 <br><br>
+                    
+                    (+91) 81858-72735 <br><br>
+                    
+                    project@vintage.in</p>
+            </div>
+            <hr>
+        </div>
+       
+        <div class="hehe">
+            <div class="no">
+                <a href="home.html" class="super"><img src="logo_1.jpg"width="200px" height="160px" ></a>
+            </div>
+            <div class="no">
+                <p class="k">© All Right Reserved. | VINTAGE BUILDERS & DEVELOPERS</p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+ 
+  
+
+</body>
+</html>
